@@ -1,4 +1,4 @@
-### HTTP Methods
+## HTTP Methods
 HTTP defines a set of request methods to indicate the desired action to be performed for a given resource.
 
 There are various HTTP Request Methods:
@@ -52,11 +52,11 @@ There are various HTTP Request Methods:
      curl -X TRACE http://example.com/path/to/resource
      ```
 
-### Http headers
+## Http headers
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept
 
 
-### HTTP Response Status Code
+## HTTP Response Status Code
 
 There are various HTTP Response Status Codes:
 
