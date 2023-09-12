@@ -33,3 +33,9 @@ nginx     5877  0.0  0.2  40520  2888 ?        S    10:16   0:00 nginx: worker p
 nginx     5878  0.0  0.2  40520  2888 ?        S    10:16   0:00 nginx: worker process #<---2
 ec2-user  5885  0.0  0.0 119424   948 pts/0    S+   10:17   0:00 grep --color=auto nginx
 ```
+### PID
+```bash
+pid /run/nginx.pid;  # pid of the master process
+```
+
+![image](https://github.com/shamimice03/nginx-workshop/assets/19708705/179485c4-a581-4bd2-be27-d429e66a6e1e)
