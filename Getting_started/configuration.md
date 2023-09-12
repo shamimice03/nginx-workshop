@@ -3,7 +3,7 @@
 - log file stored in `/var/log/nginx`
 
 ## The NGINX Process Model
-![Alt text](image.png)
+![image](https://github.com/shamimice03/nginx-workshop/assets/19708705/c4c6111a-16e7-4056-a51b-b30e02b8e17e)
 
 ```bash
 >> ps -aux | grep nginx
