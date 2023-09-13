@@ -1,3 +1,5 @@
+![Alt text](image.png)
+
 # Validation
 
 Run following command after making any change in the `/etc/nginx/nginx.conf` file:
