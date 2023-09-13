@@ -62,10 +62,8 @@ server {
 ```
 
 2. Validate the `conf` file and `restart` the server:
-```
-
+```bash
 sudo nginx -t
-
 sudo systemctl restart nginx
 ```
 
