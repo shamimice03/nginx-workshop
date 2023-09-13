@@ -19,7 +19,9 @@ In this article, we will host two different website on one `nginx` server.
 server {
         listen       80;
         server_name  webapp1.kubecloud.net;
-        
+
+        access_log /var/log/nginx/webapp1.access.log main;
+
         location / {
         root /var/www/html;
         index test.html;
@@ -41,6 +43,8 @@ server {
 server {
         listen       80;
         server_name  webapp2.kubecloud.net;
+
+        access_log /var/log/nginx/webapp2.access.log main;
         
         location / {
         root /usr/share/nginx/html;
