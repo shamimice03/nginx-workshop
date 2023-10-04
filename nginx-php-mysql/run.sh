@@ -10,7 +10,7 @@ unset IFS
 # Loop through and execute the sorted scripts
 for SCRIPT in "${sorted[@]}"; do
     if [ -x "$SCRIPT" ]; then
-        echo "Running $SCRIPT..."
+        echo "=============================Running $SCRIPT============================================="
         "./$SCRIPT"
     else
         echo "Error: $SCRIPT is not executable or does not exist."
