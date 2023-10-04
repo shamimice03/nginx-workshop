@@ -2,6 +2,6 @@
 set -x
 
 sudo chown -R nginx:nginx /var/www/html
-sudo chmod -R 644 /var/www/html
+sudo chmod -R 755 /var/www/html
 
 
