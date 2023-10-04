@@ -4,7 +4,7 @@ set -x
 SITE_ADDR="test.kubecloud.net"
 
 # Create the nginx configuration file in /etc/nginx/conf.d/
-cat <<EOF | sudo tee /etc/nginx/conf.d/test.conf
+cat <<EOF | sudo tee /etc/nginx/conf.d/check.conf
 server {
     listen       80;
     server_name  ${SITE_ADDR}test.kubecloud.net www.${SITE_ADDR};
@@ -28,10 +28,10 @@ server {
         root /var/www/html;  # files to be served
         include fastcgi_params;
         fastcgi_pass unix:/var/run/php-fpm/www.sock;  # Adjust to your PHP-FPM socket path
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
     }
 }
 EOF
 
-# Reload Nginx to apply the new configuration
-sudo nginx -s reload
+# Nginx configuration test
+sudo nginx -t
