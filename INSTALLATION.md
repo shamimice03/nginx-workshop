@@ -25,7 +25,7 @@ nginx -V
 
 ### AmazonLinux2
 ```bash
-sudo amazon-linux-extras install nginx1
+sudo amazon-linux-extras install nginx1 -y
 sudo systemctl start nginx
 sudo systemctal enable nginx
 ```
