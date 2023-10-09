@@ -10,7 +10,7 @@ nginx -V
 
 ### Approach 2 (Recommended):
 
-Documentation Referred:
+Documentation:
 
 https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
 
